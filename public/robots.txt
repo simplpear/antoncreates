@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://simplpear.github.io/antoncreates/sitemap.xml
