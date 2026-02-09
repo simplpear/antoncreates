@@ -158,6 +158,15 @@ export const config: ChatConfig = {
             ],
         },
         {
+            id: "contact",
+            text: "Contact",
+            verticalContent: false,
+            images: [],
+            videos: [],
+            caption: "Happy to chat! Drop me an email at hello@antoncreates.cc",
+            cards: [],
+        },
+        {
             id: "human",
             text: "Are you human?",
             verticalContent: false,

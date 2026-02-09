@@ -458,12 +458,14 @@ export default function Chat() {
                     streamCaption(caption, messageIndex)
                 }
             } else {
+                const isContact = text.toLowerCase().includes("contact")
                 const assistantMessage: Message = {
                     role: "assistant",
                     content: "",
                     timestamp: new Date().toISOString(),
                     captionStreaming: false,
                     cards: cards.length > 0 ? cards : [],
+                    showContactForm: isContact,
                 }
                 const messageIndex = messages.length + 1
                 setMessages((prev) => [...prev, assistantMessage])
