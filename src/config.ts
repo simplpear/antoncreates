@@ -119,12 +119,18 @@ export const config: ChatConfig = {
             verticalContent: false,
             images: [],
             videos: [],
-            caption: "Yes, Agent Chat -- A fast and sleek chat app for your AI agents built in n8n or Make with secured local chat history. A new project is coming soon.",
+            caption: "Yes! Here are a couple of things I've been working on:",
             cards: [
+                {
+                    url: "https://getmonkey.cc",
+                    title: "MonKey",
+                    description: "A macOS menu bar utility that auto-corrects keyboard layout mistakes, translates text across 55+ languages, checks grammar, and runs custom AI actions -- all via a hotkey.",
+                    image: `${BASE}assets/images/card-monkey.png`,
+                },
                 {
                     url: "https://simplpear.gumroad.com/l/agentchat",
                     title: "Agent Chat",
-                    description: "Agent Chat is a lightweight, plug-and-play desktop chat interface that connects directly to your n8n/Make instance (or any webhook-based platform). It brings you a clean, focused chat experience that feels similar to ChatGPT app -- but it's yours, private, and runs locally.",
+                    description: "A lightweight, plug-and-play desktop chat interface that connects directly to your n8n/Make instance. Clean, private, runs locally.",
                     image: `${BASE}assets/images/card-agent-chat.webp`,
                 },
             ],
