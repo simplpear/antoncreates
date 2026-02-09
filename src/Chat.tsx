@@ -1624,6 +1624,7 @@ export default function Chat() {
                                 outline: "none",
                                 fontFamily: config.input.font,
                                 resize: "none",
+                                paddingLeft: "8px",
                                 maxHeight: "200px",
                                 overflow: "auto",
                                 color: config.colors.inputTextColor,
@@ -1653,32 +1654,32 @@ export default function Chat() {
                                 flexShrink: 0,
                                 transition:
                                     "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                                transform: "scale(1) rotate(0deg)",
+                                transform: "scale(1)",
                                 transformOrigin: "center",
                                 willChange: "transform",
                             }}
                             onMouseEnter={(e) => {
                                 if (!loading && !isStreaming && input.trim()) {
                                     e.currentTarget.style.transform =
-                                        "scale(1.1) rotate(-10deg)"
+                                        "scale(1.1)"
                                     e.currentTarget.style.boxShadow = `0 6px 16px ${config.colors.buttonColor}60`
                                 }
                             }}
                             onMouseLeave={(e) => {
                                 e.currentTarget.style.transform =
-                                    "scale(1) rotate(0deg)"
+                                    "scale(1)"
                                 e.currentTarget.style.boxShadow = "none"
                             }}
                             onMouseDown={(e) => {
                                 if (!loading && !isStreaming && input.trim()) {
                                     e.currentTarget.style.transform =
-                                        "scale(0.95) rotate(0deg)"
+                                        "scale(0.95)"
                                 }
                             }}
                             onMouseUp={(e) => {
                                 if (!loading && !isStreaming && input.trim()) {
                                     e.currentTarget.style.transform =
-                                        "scale(1.1) rotate(-10deg)"
+                                        "scale(1.1)"
                                 }
                             }}
                         >
