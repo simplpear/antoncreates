@@ -41,9 +41,10 @@ export const config: ChatConfig = {
     },
     specialResponses: {
         defaultText: "Hey! If you have any questions or want to get in touch, just write 'contact'. Quick messages will help you navigate.",
-        contactFormUrl: "https://trusting-frame-120753.framer.app/contact",
-        contactFormHeight: 400,
-        contactResponseText: "Please fill out the form below, and I'll get back to you shortly:",
+        contactFormUrl: "",
+        contactFormHeight: 0,
+        contactResponseText: "Happy to chat! Drop me an email at hello@antoncreates.cc",
+        contactEmail: "hello@antoncreates.cc",
         greetingLottie: `${BASE}assets/misc/greeting-confetti.json`,
         greetingResponseText: 'Hi, glad you\'re here! This portfolio talks back. Pick an option below, or just type "contact" to reach me.',
         helloThereResponseText: "General Kenobi! You are a bold one.",

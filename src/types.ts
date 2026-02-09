@@ -73,6 +73,7 @@ export interface ChatConfig {
         contactFormUrl: string
         contactFormHeight: number
         contactResponseText: string
+        contactEmail: string
         greetingLottie: string
         greetingResponseText: string
         helloThereResponseText: string
